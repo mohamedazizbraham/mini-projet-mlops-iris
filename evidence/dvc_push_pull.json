@@ -1,0 +1,8 @@
+{
+  "sha256_original": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+  "sha256_restored": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+  "identical": true,
+  "fresh_workspace": true,
+  "push": "1 file pushed\n",
+  "pull": "A       data/iris.csv\n1 file added and 1 file fetched\n"
+}

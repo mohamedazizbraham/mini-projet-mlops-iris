@@ -18,8 +18,8 @@ def main():
     subprocess.run(['git', 'config', '--global', '--add', 'safe.directory', '/app'], check=True)
     if not Path('.git').exists():
         run('git', 'init', '-b', 'main')
-    if not Path('.dvc').exists():
-        run('dvc', 'init')
+    if not Path('.dvc/.gitignore').exists():
+        run('dvc', 'init', '-f')
     before = prepare()
     run('dvc', 'add', str(DATA))
     run('dvc', 'remote', 'add', '-f', '-d', 'localstore', 'runtime/dvc-remote')
