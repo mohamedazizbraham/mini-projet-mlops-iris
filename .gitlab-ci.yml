@@ -1,0 +1,36 @@
+stages: [test, build]
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  ZENML_ANALYTICS_OPT_IN: 'false'
+  MLFLOW_TRACKING_URI: 'sqlite:///runtime/mlflow.db'
+test:
+  stage: test
+  image: python:3.11-slim
+  before_script:
+    - apt-get update && apt-get install -y git libgomp1
+    - pip install -r requirements.txt
+  script:
+    - mkdir -p runtime
+    - python -m src.bootstrap
+    - ruff check src tests
+    - python -m src.train
+    - pytest -q
+  artifacts:
+    when: always
+    paths: [reports/, evidence/]
+build:
+  stage: build
+  image: docker:27-cli
+  services: [docker:27-dind]
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: /certs
+    DOCKER_TLS_VERIFY: '1'
+    DOCKER_CERT_PATH: /certs/client
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login "$CI_REGISTRY" -u "$CI_REGISTRY_USER" --password-stdin
+  script:
+    - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
