@@ -1,0 +1,50 @@
+[
+  {
+    "name": "v1",
+    "kind": "logistic",
+    "C": 1.0,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9579707438530969,
+    "cv_std": 0.02677171608964413,
+    "model_path": "models/v1.joblib",
+    "test_accuracy": 0.9333333333333333,
+    "test_f1_macro": 0.9333333333333332,
+    "mlflow_run_id": "b7d35ad462654e51b53b7b7617f2d018",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "variation-low-C",
+    "kind": "logistic",
+    "C": 0.1,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9158076563958917,
+    "cv_std": 0.0465520416719404,
+    "model_path": "models/variation-low-C.joblib",
+    "mlflow_run_id": "935844ce79494f44b0cb3fb947bcf21b",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "variation-svm",
+    "kind": "svm",
+    "C": 1.0,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9665359477124185,
+    "cv_std": 0.016732026143790834,
+    "model_path": "models/variation-svm.joblib",
+    "mlflow_run_id": "ca9774b61c834be1abe13db55512db79",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "v2",
+    "kind": "svm",
+    "C": 7.851485442027691,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9749019607843138,
+    "cv_std": 0.020492463207597813,
+    "model_path": "models/v2.joblib",
+    "test_accuracy": 0.9666666666666667,
+    "test_f1_macro": 0.9665831244778612,
+    "mlflow_run_id": "32e07b77a2f54a649f04f0a17c9fa381",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  }
+]

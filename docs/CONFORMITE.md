@@ -8,8 +8,8 @@
 | Docker / Compose | Image commune, API et MLflow, outils d'entraînement | Dockerfile, docker-compose.yml |
 | Versioning DVC | Pointeur du dataset et remote local | .dvc/config, data/iris.csv.dvc |
 | Push / pull reproductible | Restauration dans un espace vierge, SHA-256 identique | evidence/dvc_push_pull.json |
-| MLflow | Baseline, variations, Optuna, modèles et figures | UI port 5500, evidence/, reports/ |
-| ZenML | Quatre exécutions, data/train/eval/export | reports/zenml_runs.json, captures |
+| MLflow | Baseline, variations, Optuna, modèles et figures | UI port 5500, reports/ ; captures à ajouter |
+| ZenML | Quatre exécutions, data/train/eval/export | reports/zenml_runs.json ; captures à ajouter |
 | Optuna | 8 essais, modèle et C, objectif F1 CV | reports/optuna_trials.csv |
 | CI GitLab optionnelle | Lint/tests puis build/push registre | .gitlab-ci.yml ; exécution distante à confirmer |
 | API stable | POST /predict, validation des 4 mesures | src/api.py, tests/test_project.py |

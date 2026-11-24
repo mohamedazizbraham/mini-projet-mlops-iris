@@ -4,7 +4,7 @@
 
 Faire tourner `scripts/setup.ps1` avant le cours. Garder Docker Desktop ouvert. Ouvrir MLflow sur http://localhost:5500 et la documentation API sur http://localhost:8500/docs. Préparer PowerShell dans le dossier du projet avec la commande `powershell -ExecutionPolicy Bypass -File scripts/demo.ps1`, sans encore la lancer. Afficher le support de présentation.
 
-Ne pas construire d'image ni réentraîner pendant la démo. Les captures dans `evidence/` et les résultats dans `reports/` servent de secours.
+Ne pas construire d'image ni réentraîner pendant la démo. Les résultats dans `reports/` et les preuves dans `evidence/` servent de secours. Les captures d'interface restent à ajouter selon `docs/CAPTURES_A_PRENDRE.md`.
 
 ## Version 5 minutes
 

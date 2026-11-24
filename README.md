@@ -25,6 +25,7 @@ Appuyer sur Entrée trois fois : v1, v2, rollback v1. Le script vérifie automat
 - Suivi MLflow : http://localhost:5500
 - État du service : http://localhost:8500/health
 - Monitoring minimal : http://localhost:8500/metrics
+- ZenML : après entraînement, lancer `docker compose --profile tools up -d zenml`, puis ouvrir http://localhost:8501
 
 ## Protocole scientifique
 
@@ -108,17 +109,18 @@ docs/         guide oral et correspondance au cahier des charges
 runtime/      stockage local persistant, ignoré par Git
 ```
 
-## Dépôt à publier
+## Dépôt public
 
-Le dossier contient un dépôt Git local. Après création d'un dépôt vide dans ton compte, ajouter son URL et pousser les branches et tags :
+https://github.com/mohamedazizbraham/mini-projet-mlops-iris
+
+Le dossier contient aussi un dépôt Git local. Pour publier de nouvelles modifications :
 
 ```powershell
-git remote add origin URL_DU_DEPOT
 git push -u origin main
 git push origin dev --tags
 ```
 
-Le cahier des charges accepte un lien GitHub ou GitLab. GitLab permet aussi d'utiliser la CI fournie. L'URL distante doit être ajoutée au rendu une fois la publication effectuée.
+Le cahier des charges accepte un lien GitHub ou GitLab. GitLab permet aussi d'utiliser la CI fournie. Le dépôt ci-dessus est public.
 
 ## Références
 

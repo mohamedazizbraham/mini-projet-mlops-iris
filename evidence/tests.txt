@@ -1,0 +1,47 @@
+....                                                                     [100%]
+=============================== warnings summary ===============================
+../usr/local/lib/python3.11/site-packages/starlette/testclient.py:36
+  /usr/local/lib/python3.11/site-packages/starlette/testclient.py:36: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+../usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /usr/local/lib/python3.11/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../usr/local/lib/python3.11/site-packages/matplotlib/_mathtext.py:45
+  /usr/local/lib/python3.11/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+../usr/local/lib/python3.11/site-packages/pydantic/_internal/_config.py:323
+  /usr/local/lib/python3.11/site-packages/pydantic/_internal/_config.py:323: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+../usr/local/lib/python3.11/site-packages/passlib/utils/__init__.py:854
+  /usr/local/lib/python3.11/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+    from crypt import crypt as _crypt
+
+tests/test_project.py::test_reproducibility
+tests/test_project.py::test_reproducibility
+  /usr/local/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:451: DeprecationWarning: scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.
+    opt_res = optimize.minimize(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 19 warnings in 169.31s (0:02:49)

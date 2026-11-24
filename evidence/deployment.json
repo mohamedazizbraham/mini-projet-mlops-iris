@@ -1,0 +1,32 @@
+[
+  {
+    "response": {
+      "species": "setosa",
+      "class_id": 0,
+      "model_version": "v1",
+      "mlflow_run_id": "b7d35ad462654e51b53b7b7617f2d018"
+    },
+    "timestamp": "2026-11-24T09:34:12.6027576+01:00",
+    "expected": "v1"
+  },
+  {
+    "response": {
+      "species": "setosa",
+      "class_id": 0,
+      "model_version": "v2",
+      "mlflow_run_id": "32e07b77a2f54a649f04f0a17c9fa381"
+    },
+    "timestamp": "2026-11-24T09:34:47.9651359+01:00",
+    "expected": "v2"
+  },
+  {
+    "response": {
+      "species": "setosa",
+      "class_id": 0,
+      "model_version": "v1",
+      "mlflow_run_id": "b7d35ad462654e51b53b7b7617f2d018"
+    },
+    "timestamp": "2026-11-24T09:35:25.8613835+01:00",
+    "expected": "v1"
+  }
+]

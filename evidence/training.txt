@@ -1,0 +1,155 @@
+2026/11/23 14:41:16 INFO mlflow.tracking.fluent: Experiment with name 'Iris-MLOps' does not exist. Creating a new experiment.
+[I 2026-11-23 14:41:16,405] A new study created in memory with name: no-name-f0d2b476-d448-49a5-bd7c-5cc5361fb4c7
+🏃 View run optuna-00 at: http://mlflow:5000/#/experiments/1/runs/39afbb2e7d474e46b58a68563f1baed0
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:41:38,813] Trial 0 finished with value: 0.9749019607843138 and parameters: {'kind': 'svm', 'C': 7.851485442027691}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-01 at: http://mlflow:5000/#/experiments/1/runs/1a2ea5249d584f1798de9998c1113443
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:41:54,604] Trial 1 finished with value: 0.9158076563958917 and parameters: {'kind': 'logistic', 'C': 0.14687692288164142}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-02 at: http://mlflow:5000/#/experiments/1/runs/2be09c1b9aa7416bb3e4af0dd287ad8c
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:42:06,503] Trial 2 finished with value: 0.9579707438530969 and parameters: {'kind': 'svm', 'C': 3.179179428338125}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-03 at: http://mlflow:5000/#/experiments/1/runs/ecba26134ffc40dd98fd2c1d53c02fbe
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:42:33,035] Trial 3 finished with value: 0.9579707438530969 and parameters: {'kind': 'svm', 'C': 26.59074354588306}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-04 at: http://mlflow:5000/#/experiments/1/runs/178ed30838904aab805738fee2e5caa7
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:42:40,412] Trial 4 finished with value: 0.9665359477124185 and parameters: {'kind': 'svm', 'C': 13.397368546534622}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-05 at: http://mlflow:5000/#/experiments/1/runs/6ba063d4abdd43eb95b45a2e7e5ef6a3
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:43:09,701] Trial 5 finished with value: 0.9579707438530969 and parameters: {'kind': 'logistic', 'C': 0.537740363820152}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-06 at: http://mlflow:5000/#/experiments/1/runs/304c9da6093d44e5adf3c195104b0d84
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:43:18,124] Trial 6 finished with value: 0.9579707438530969 and parameters: {'kind': 'svm', 'C': 3.641457744142983}. Best is trial 0 with value: 0.9749019607843138.
+🏃 View run optuna-07 at: http://mlflow:5000/#/experiments/1/runs/21ec5f9f199e4013ab69ce8e4c9b474b
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[I 2026-11-23 14:43:23,733] Trial 7 finished with value: 0.9573570426821201 and parameters: {'kind': 'svm', 'C': 47.430532525920675}. Best is trial 0 with value: 0.9749019607843138.
+[1;35mInitiating a new run for the pipeline: [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mInitializing the ZenML global configuration version to 0.81.0[0m
+[1;35mCreating database tables[0m
+[1;35mCreating default project 'default' ...[0m
+[1;35mCreating default stack...[0m
+[1;35mSetting the global active project to 'default'.[0m
+[33mSetting the global active stack to default.[0m
+[1;35mRegistered new pipeline: [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mCaching is disabled by default for [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mUsing user: [0m[1;36mdefault[1;35m[0m
+[1;35mUsing stack: [0m[1;36mdefault[1;35m[0m
+[1;35m  artifact_store: [0m[1;36mdefault[1;35m[0m
+[1;35m  orchestrator: [0m[1;36mdefault[1;35m[0m
+[1;35mYou can visualize your pipeline runs in the [0m[1;36mZenML Dashboard[1;35m. In order to try it locally, please run [0m[1;36mzenml login --local[1;35m.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has finished in [0m[1;36m35.818s[1;35m.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has finished in [0m[1;36m21.135s[1;35m.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has started.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has finished in [0m[1;36m10.662s[1;35m.[0m
+[1;35mStep [0m[1;36mexport_step[1;35m has started.[0m
+[export_step] 🏃 View run v1 at: http://mlflow:5000/#/experiments/1/runs/b7d35ad462654e51b53b7b7617f2d018
+[export_step] 🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[1;35mStep [0m[1;36mexport_step[1;35m has finished in [0m[1;36m10.676s[1;35m.[0m
+[1;35mPipeline run has finished in [0m[1;36m1m58s[1;35m.[0m
+[1;35mInitiating a new run for the pipeline: [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mCaching is disabled by default for [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mUsing user: [0m[1;36mdefault[1;35m[0m
+[1;35mUsing stack: [0m[1;36mdefault[1;35m[0m
+[1;35m  artifact_store: [0m[1;36mdefault[1;35m[0m
+[1;35m  orchestrator: [0m[1;36mdefault[1;35m[0m
+[1;35mYou can visualize your pipeline runs in the [0m[1;36mZenML Dashboard[1;35m. In order to try it locally, please run [0m[1;36mzenml login --local[1;35m.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has finished in [0m[1;36m1.561s[1;35m.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has finished in [0m[1;36m3.811s[1;35m.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has started.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has finished in [0m[1;36m3.702s[1;35m.[0m
+[1;35mStep [0m[1;36mexport_step[1;35m has started.[0m
+[export_step] 🏃 View run variation-low-C at: http://mlflow:5000/#/experiments/1/runs/935844ce79494f44b0cb3fb947bcf21b
+[export_step] 🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[1;35mStep [0m[1;36mexport_step[1;35m has finished in [0m[1;36m8.342s[1;35m.[0m
+[1;35mPipeline run has finished in [0m[1;36m25.675s[1;35m.[0m
+[1;35mInitiating a new run for the pipeline: [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mCaching is disabled by default for [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mUsing user: [0m[1;36mdefault[1;35m[0m
+[1;35mUsing stack: [0m[1;36mdefault[1;35m[0m
+[1;35m  artifact_store: [0m[1;36mdefault[1;35m[0m
+[1;35m  orchestrator: [0m[1;36mdefault[1;35m[0m
+[1;35mYou can visualize your pipeline runs in the [0m[1;36mZenML Dashboard[1;35m. In order to try it locally, please run [0m[1;36mzenml login --local[1;35m.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has finished in [0m[1;36m1.487s[1;35m.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has finished in [0m[1;36m2.372s[1;35m.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has started.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has finished in [0m[1;36m2.640s[1;35m.[0m
+[1;35mStep [0m[1;36mexport_step[1;35m has started.[0m
+[export_step] 🏃 View run variation-svm at: http://mlflow:5000/#/experiments/1/runs/ca9774b61c834be1abe13db55512db79
+[export_step] 🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[1;35mStep [0m[1;36mexport_step[1;35m has finished in [0m[1;36m4.213s[1;35m.[0m
+[1;35mPipeline run has finished in [0m[1;36m16.493s[1;35m.[0m
+[1;35mInitiating a new run for the pipeline: [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mCaching is disabled by default for [0m[1;36miris_pipeline[1;35m.[0m
+[1;35mUsing user: [0m[1;36mdefault[1;35m[0m
+[1;35mUsing stack: [0m[1;36mdefault[1;35m[0m
+[1;35m  artifact_store: [0m[1;36mdefault[1;35m[0m
+[1;35m  orchestrator: [0m[1;36mdefault[1;35m[0m
+[1;35mYou can visualize your pipeline runs in the [0m[1;36mZenML Dashboard[1;35m. In order to try it locally, please run [0m[1;36mzenml login --local[1;35m.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mdata_step[1;35m has finished in [0m[1;36m1.027s[1;35m.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has started.[0m
+[1;35mStep [0m[1;36mtrain_step[1;35m has finished in [0m[1;36m1.475s[1;35m.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has started.[0m
+[1;35mStep [0m[1;36meval_step[1;35m has finished in [0m[1;36m2.455s[1;35m.[0m
+[1;35mStep [0m[1;36mexport_step[1;35m has started.[0m
+[export_step] 🏃 View run v2 at: http://mlflow:5000/#/experiments/1/runs/32e07b77a2f54a649f04f0a17c9fa381
+[export_step] 🧪 View experiment at: http://mlflow:5000/#/experiments/1
+[1;35mStep [0m[1;36mexport_step[1;35m has finished in [0m[1;36m3.139s[1;35m.[0m
+[1;35mPipeline run has finished in [0m[1;36m12.208s[1;35m.[0m
+[
+  {
+    "name": "v1",
+    "kind": "logistic",
+    "C": 1.0,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9579707438530969,
+    "cv_std": 0.02677171608964413,
+    "model_path": "models/v1.joblib",
+    "test_accuracy": 0.9333333333333333,
+    "test_f1_macro": 0.9333333333333332,
+    "mlflow_run_id": "b7d35ad462654e51b53b7b7617f2d018",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "variation-low-C",
+    "kind": "logistic",
+    "C": 0.1,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9158076563958917,
+    "cv_std": 0.0465520416719404,
+    "model_path": "models/variation-low-C.joblib",
+    "mlflow_run_id": "935844ce79494f44b0cb3fb947bcf21b",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "variation-svm",
+    "kind": "svm",
+    "C": 1.0,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9665359477124185,
+    "cv_std": 0.016732026143790834,
+    "model_path": "models/variation-svm.joblib",
+    "mlflow_run_id": "ca9774b61c834be1abe13db55512db79",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  },
+  {
+    "name": "v2",
+    "kind": "svm",
+    "C": 7.851485442027691,
+    "data_sha256": "c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47",
+    "cv_f1_macro": 0.9749019607843138,
+    "cv_std": 0.020492463207597813,
+    "model_path": "models/v2.joblib",
+    "test_accuracy": 0.9666666666666667,
+    "test_f1_macro": 0.9665831244778612,
+    "mlflow_run_id": "32e07b77a2f54a649f04f0a17c9fa381",
+    "git_commit": "d4bf4c439f0712ea0b2d04dee911127a4c3ed95f"
+  }
+]
