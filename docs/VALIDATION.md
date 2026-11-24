@@ -4,6 +4,7 @@
 - DVC : push puis pull dans un espace vierge avec cache vide. SHA-256 identique avant/après : `c52da941c4117668428d973554bb3380ba78c23400c2848e9b65107d63ccba47`.
 - Optuna : 8 essais terminés. Meilleur essai : SVM RBF, C=7.851485442027691, F1 macro CV=0.974902.
 - ZenML : 4 exécutions terminées, chacune avec data/train/eval/export. Les IDs figurent dans `reports/zenml_runs.json`.
+- Tableau de bord ZenML : démarrage et authentification locale vérifiés. Son API retourne bien les 4 exécutions enregistrées.
 - MLflow : 8 runs Optuna et 4 runs complets avec paramètres et métriques. Les releases possèdent un modèle et une matrice de confusion en artefacts.
 - Tests : 4 tests réussis. Les 19 avertissements proviennent de dépréciations de bibliothèques, sans échec de test. Voir `evidence/tests.txt`.
 - Lint : `ruff check src tests` réussi.

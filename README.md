@@ -27,6 +27,8 @@ Appuyer sur Entrée trois fois : v1, v2, rollback v1. Le script vérifie automat
 - Monitoring minimal : http://localhost:8500/metrics
 - ZenML : après entraînement, lancer `docker compose --profile tools up -d zenml`, puis ouvrir http://localhost:8501
 
+Pour la connexion ZenML locale : utilisateur `default`, mot de passe vide. Le tableau de bord utilise la même base que les quatre pipelines exécutés. Il est exposé uniquement sur localhost.
+
 ## Protocole scientifique
 
 Dataset public Iris fourni par scikit-learn : 150 observations, 4 mesures, 3 classes équilibrées. Split stratifié fixe : 120 lignes d'entraînement et 30 lignes de test, graine 42. Le scaler est inclus dans un pipeline sklearn, ajusté séparément dans chaque fold pour éviter la fuite de données.
